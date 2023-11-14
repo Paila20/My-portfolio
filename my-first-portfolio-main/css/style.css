@@ -256,22 +256,60 @@ footer#contact p#copy {
   font-weight: 600;
 }
 
-/* Footer Stylings */
-
-/* Main Section Stylings */
-
-/* Media Queries Screens */
-
 @media screen and (max-width: 800px) {
   section.title {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  section.title .titleDes {
+    margin-top: 2rem;
+  }
+
+  section.title .titlePic {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+
+  section.title .titlePic img.profilePic {
+    width: 70%; /* Adjust as needed */
+    height: auto;
   }
 
   main #about .aboutItem {
     flex-direction: column;
   }
 
+  main #about .aboutItem .work {
+    margin-right: 0;
+  }
+
+  main #about .aboutItem .work p {
+    margin-right: 0;
+  }
+
+  main h1.skillHead,
+  main h1.projectHead {
+    padding: 1rem 0;
+  }
+
   main #project .projItem {
     flex-direction: column;
   }
+
+  main #project .projItem .projectDes {
+    margin-right: 0;
+  }
+
+  main #project .projItem .projectScst img {
+    width: 100%;
+  }
+
+  footer#contact .socialIcons img.git,
+  footer#contact .socialIcons img.link {
+    width: 2.5rem;
+    margin-right: 10px;
+  }
 }
+
